@@ -1,0 +1,11 @@
+#grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 800px;
+  width: 800px;
+}
+
+.color {
+  background-color: lightpink;
+  /* opacity: 0.1;  */
+}
