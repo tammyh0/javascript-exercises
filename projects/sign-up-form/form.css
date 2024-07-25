@@ -1,0 +1,210 @@
+@font-face {
+  font-family: 'Norse Bold';
+  src: url(./Norse-Bold.otf);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  font-family: sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  --off-white-text-color: rgba(255, 255, 255, 0.921);
+  --dark-green-color: #596D48;
+}
+
+#splash-container {
+  background-image: url(./fern-background.jpg);
+  background-size: cover; /* Scales image to cover entire element */
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 35%;
+  height: 100%;
+  position: relative;
+}
+
+#banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.45);
+  position: absolute;
+  top: 20%;
+}
+
+img[src='./odin-logo.png'] {
+  display: block;
+  height: 80%;
+}
+
+h1 {
+  color: var(--off-white-text-color);
+  font-family: 'Norse Bold', sans-serif, 'Times New Roman';
+  font-size: 62px;
+  padding-top: 20px;
+}
+
+#credits {
+  position: absolute;
+  bottom: 10px;
+  color: var(--off-white-text-color);
+  font-size: small;
+  width: 100%;
+  text-align: center;
+}
+
+#splash-container a,
+#splash-container a:visited {
+  color: var(--off-white-text-color);
+}
+
+#content-container {
+  width: calc(100vw - 35%);
+  height: 100vh;
+}
+
+#content-container #hook,
+#content-container #btns {
+  background-color: rgba(241, 248, 249, 0.218);
+  height: 36%;
+  position: relative;
+}
+
+#hook div,
+form,
+#btns div {
+  position: absolute;
+  padding: 10px 36px;
+}
+
+#hook div {
+  bottom: 10px;
+}
+
+#hook p {
+  font-weight: bold;
+  margin: 18px 0;
+  max-inline-size: 55ch;
+  font-size: large;
+}
+
+#form {
+  height: calc(100vh - 72%);
+  box-shadow: 3px 5px 5px rgb(228, 227, 227), 3px 0 3px rgb(228, 227, 227);
+  color: rgba(60, 60, 60, 0.966);
+  color: rgb(103, 103, 103);
+}
+
+#form h2 {
+  font-size: large;
+}
+
+#form fieldset {
+  display: flex;
+  border: none;
+  padding: 0;
+  gap: 60px;
+  margin: 20px 0;
+}
+
+#form div {
+  display: flex;
+  flex-direction: column;
+}
+
+#form label {
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+#form input {
+  width: 240px;
+  border: 1px solid #E5E7EB;
+  border-radius: 3px;
+  padding-left: 10px;
+}
+
+#form imput:focus {
+  border-color: blue;
+  box-shadow: 3px 3px 3px rgb(228, 227, 227);
+}
+
+#form input:invalid {
+  border-color: red;
+}
+
+#btns div {
+  top: 10px;
+}
+
+#btns button {
+  border: none;
+  background-color: var(--dark-green-color);
+  color: var(--off-white-text-color);
+  font-weight: bold;
+  padding: 10px 44px;
+  border-radius: 8px;
+  margin: 10px 0;
+  font-size: 14px;
+  box-shadow: 3px 3px 3px rgb(228, 227, 227);
+}
+
+#btns p {
+  margin: 16px 0;
+  font-size: 14px;
+}
+
+#btns a,
+#btns a:visited {
+  color: var(--dark-green-color);
+  text-decoration: none;
+  font-weight: bold;
+}
