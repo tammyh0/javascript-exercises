@@ -1,0 +1,39 @@
+body {
+  height: 100vh;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.players {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+  font-size: 36px;
+}
+
+.current {
+  text-decoration: underline;
+  text-decoration-color: pink;
+}
+
+.gameboard {
+  display: grid;
+  height: 450px;
+  justify-content: center;
+  grid-template: repeat(3, 150px) / repeat(3, 150px);
+}
+
+.square {
+  border: 1px solid black;
+}
+
+.result {
+  height: 50px;
+  text-align: center;
+  padding: 5% 0;
+}
+
+.play-btn {
+  display: flex;
+  justify-content: center;
+}
